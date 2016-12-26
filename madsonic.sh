@@ -18,11 +18,7 @@ if [ -z "$CONTEXT" ]; then
   CONTEXT=/
 fi
 
-if [ "$SSL" = "yes" ]; then
-  PORTS="--https-port=4050"
-else
-  PORTS="--port=4040"
-fi
+PORTS="--https-port=4443"
 
 /var/madsonic/madsonic.sh \
   --home=/config \

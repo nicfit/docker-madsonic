@@ -3,8 +3,7 @@ services:
   madsonic:
     build: .
     ports:
-     - "4040:4040"
-     - "4050:4050"
+     - "4443:4443"
     volumes:
      - madsonic-config:/config
     restart: unless-stopped
